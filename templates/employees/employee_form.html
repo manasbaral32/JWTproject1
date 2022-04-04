@@ -1,0 +1,17 @@
+{% extends 'employees/base.html' %}
+{% block title %}Create Employee{% endblock %}
+{% block body%}
+    {% if form %}
+        <form method="POST">
+            {% csrf_token %}
+                <table>
+                    {{ form }}
+                </table>
+        <input type="submit" value="send" style="margin-left: 100px">
+        </form>
+    {% else %}
+       <h1>No Form Objects</h1>
+    {% endif %}
+
+
+{% endblock %}
