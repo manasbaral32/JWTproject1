@@ -2,6 +2,8 @@ from django.db import models
 from django.urls import reverse
 # Create your models here.
 
+# this is for testing purpose
+
 class Employee(models.Model):
     eno = models.IntegerField()
     ename = models.CharField(max_length=50)
